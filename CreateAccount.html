@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/createAccount.css">
+        <title> Fun Kids</title>
+    </head>
+    <body>
+      <div class="topnav">
+        <a class="active" href="Home.html">Home</a>
+        <div class="topnav-right">
+          <a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
+        </div>
+      </div>
+      
+      <div style="padding-left:16px">
+      <form action="/action_page.php" style="border:1px solid #ccc">
+        <div class="container">
+          <h1>Get Started Today!</h1>
+          <hr>
+          <label for="username"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="username" required>
+          
+          <label for="fname"><b>First Name</b></label>
+          <input type="text" placeholder="Enter First Name" id="fname" required>
+
+          <label for="lname"><b>Last Name</b></label>
+          <input type="text" placeholder="Enter Last Name" id="lname" required>
+
+          <label for="bday"><b>Date of Birth</b></label>
+          <input type="date" id="bday" required>
+          <p></p>
+        
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" id="email" required>
+        
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" id="psw" required>
+            
+          <div class="clearfix">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn" onClick="store()">Submit</button>
+          </div>
+        </div>
+      </form>
+
+      <div id="id01" class="modal">
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="img/avatar.png" alt="Avatar" class="avatar">
+            </div>
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" id="uname" required>
+                
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" id="psw" required>
+                
+                <button type="submit" onClick= "check()">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+            
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+      var modal = document.getElementById('id01');
+      var uname = document.getElementById('uname');
+      var psw = document.getElementById('psw');
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+
+      function store(){
+          localStorage.setItem('uname', uname.value);
+          localStorage.setItem('psw',psw.value);
+      }
+
+      function check(){
+
+          var savedName = localStorage.getItem('uname');
+          var savedPsw = localStorage.getItem('psw');
+
+          var uname = document.getElementById('uname');
+          var psw = document.getElementById('psw');
+
+          if(uname.value == savedName && psw.value == savedPsw){
+              alert('Login Successful');
+          }
+          else{
+              alert('incorrect username or password');
+          }
+      }
+
+      </script>
+        
+    </body>
+</html>
