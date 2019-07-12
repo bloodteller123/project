@@ -185,6 +185,14 @@ export default class Challenge extends Component {
                                         extra={hintButton}
                                     />
                                 </div>
+                                <div className="back">
+                                    <Card
+                                            description="Forget the concepts in the lessons?"
+                                            style={localStyle.card}
+                                            extra={<Button primary style={{marginLeft:30}} onClick={}>Back to lesson</Button>}
+                                        />
+                                    
+                                </div>
                             </div>
                         </div>
                         <div className="rightContainer" style={{marginLeft:30,display:'inline-block'}}> 
@@ -213,7 +221,7 @@ export default class Challenge extends Component {
                             <div className="additionContainer">
                                 <div>
                                     <div className="submit">
-                                        <Button secondary size='large' onClick={this.submitCode}>Submit</Button>
+                                        <Button secondary size='large' style={{marginTop:10}} onClick={this.submitCode}>Submit</Button>
                                     </div>
                                     <div style={{marginTop:30,marginLeft:-30}}> 
                                         <div className="output" style={{float:'left'}}>
