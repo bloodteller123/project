@@ -18,7 +18,7 @@
           <h1>Get Started Today!</h1>
           <hr>
           <label for="username"><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" id="uname" required>
+          <input type="text" placeholder="Enter Username" id="userName" required>
           
           <label for="fname"><b>First Name</b></label>
           <input type="text" placeholder="Enter First Name" id="fname" required>
@@ -50,8 +50,8 @@
                 <img src="css/img/avatar.png" alt="Avatar" class="avatar">
             </div>
             <div class="container">
-                <label for="uname"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" id="uname" required>
+                <label for="userName"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" id="userName" required>
                 
                 <label for="psw"><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" id="psw" required>
@@ -70,7 +70,7 @@
 
     <script>
       var modal = document.getElementById('id01');
-      var uname = document.getElementById('uname');
+      var userName = document.getElementById('userName');
       var psw = document.getElementById('psw');
 
       // When the user clicks anywhere outside of the modal, close it
@@ -81,19 +81,19 @@
       }
 
       function store(){
-          localStorage.setItem('uname', uname.value);
+          localStorage.setItem('userName', userName.value);
           localStorage.setItem('psw',psw.value);
       }
 
       function check(){
 
-          var savedName = localStorage.getItem('uname');
+          var savedName = localStorage.getItem('userName');
           var savedPsw = localStorage.getItem('psw');
 
-          var uname = document.getElementById('uname');
+          var userName = document.getElementById('userName');
           var psw = document.getElementById('psw');
 
-          if(uname.value == savedName && psw.value == savedPsw){
+          if(userName.value == savedName && psw.value == savedPsw){
               alert('Login Successful');
           }
           else{
