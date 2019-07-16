@@ -139,6 +139,7 @@ export default class Loopslesson extends Component {
                     Lesson Lists
                 </Button>
                 </Link>
+                <Link to="/challenge/3">
                  <Button
                     style={{ float:'right' ,marginTop: 20, width: 100 }}
                     primary
@@ -146,7 +147,7 @@ export default class Loopslesson extends Component {
                     >
                     Try the challenge!
                 </Button>
-                
+                </Link>
             </div>
         )
     }

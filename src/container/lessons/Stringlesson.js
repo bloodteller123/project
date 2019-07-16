@@ -232,6 +232,7 @@ The Java platform provides the String class to create and manipulate strings</p>
                     Lesson Lists
                 </Button>
                 </Link>
+                <Link to="/challenge/2">
                  <Button
                     style={{ float:'right' ,marginTop: 20, width: 100 }}
                     primary
@@ -239,6 +240,7 @@ The Java platform provides the String class to create and manipulate strings</p>
                     >
                     Try the challenge!
                 </Button>
+                </Link>
                 
             </div>
         )

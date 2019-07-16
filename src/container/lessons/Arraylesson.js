@@ -237,6 +237,7 @@ Instead of declaring individual variables, such as number0, number1, ..., and nu
                     Lesson Lists
                 </Button>
                 </Link>
+                <Link to="/challenge/4">
                  <Button
                     style={{ float:'right' ,marginTop: 20, width: 100 }}
                     primary
@@ -244,6 +245,7 @@ Instead of declaring individual variables, such as number0, number1, ..., and nu
                     >
                     Try the challenge!
                 </Button>
+                </Link>
                 
             </div>
         )
