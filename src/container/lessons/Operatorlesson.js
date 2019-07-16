@@ -10,20 +10,20 @@ export default class Operatorlesson extends Component {
     constructor(props){
         super(props);
 
-        
+
     }
 
     render() {
         return (
             <div className="mainContainer" style={{paddingLeft:70, paddingRight:70, paddingBottom:100}}>
-                <p>Lesson 3</p>
+                <h1 style={{fontSize:50, paddingTop:8}}>Lesson 3</h1>
 
                 <div style={{fontSize:30}}>
                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Arithmetic operators are used in mathematical expressions in the same way that they are used in algebra. The following table lists the arithmetic operators −
 
 Assume integer variable A holds 10 and variable B holds 20, then −</p>
                  </div>
-                 <div>
+                 <div style={{paddingTop:20}}>
                     <Table celled>
                         <Table.Header>
                         <Table.Row>
@@ -86,7 +86,7 @@ Assume integer variable A holds 10 and variable B holds 20, then −</p>
                         </Table.Body>
                     </Table>
                  </div>
-                 <div className="example">
+                 <div style={{paddingTop:40}} className="example">
                     <div style={{fontWeight:'bold',fontSize:30}}><p>Example</p></div>
                     <div style={{backgroundColor:'#F3F3F3',paddingLeft:300}}>
                     <code>{"public class Test {"}</code>
