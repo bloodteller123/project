@@ -356,7 +356,7 @@ export default class Challenge extends Component {
                       </Comment.Actions>
                     </Comment.Content>
                   </Comment>
-                  {comments[this.props.number].map((commentObject, index) => (
+                  {comments[this.props.match.params.number].map((commentObject, index) => (
                     <CommentBlock {...commentObject} />
                   ))
                   //<CommentBlock />
