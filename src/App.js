@@ -3,12 +3,12 @@ import React from 'react';
 import './App.css';
 
 import Challenge from './container/Challenge';
-import Stringlesson from './container/lessons/Stringlesson';
+import Arraylesson from './container/lessons/Arraylesson';
 import Opearatorlesson from './container/lessons/Operatorlesson'
 function App() {
   return (
     <div>
-      <Stringlesson/>
+      <Arraylesson/>
     </div>
   );
 }
