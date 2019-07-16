@@ -24,7 +24,7 @@ function Lesson() {
             </h3>
           </div>
           <div className="lesson-buttons">
-            <Link to="/lessons/lesson">
+            <Link to="/lessons/VariableLesson">
             <Button
               style={{ marginBottom: 2, width: 100 }}
               primary
@@ -47,7 +47,7 @@ function Lesson() {
             </h3>
           </div>
           <div className="lesson-buttons">
-          <Link to="/lessons/lesson">
+          <Link to="/lessons/OperatorLesson">
             <Button
               style={{ marginBottom: 2, width: 100 }}
               primary
@@ -68,7 +68,7 @@ function Lesson() {
             </h3>
           </div>
           <div className="lesson-buttons">
-          <Link to="/lessons/lesson">
+          <Link to="/lessons/StringLesson">
             <Button
               style={{ marginBottom: 2, width: 100 }}
               primary
@@ -89,7 +89,7 @@ function Lesson() {
             </h3>
           </div>
           <div className="lesson-buttons">
-          <Link to="/lessons/lesson">
+          <Link to="/lessons/LoopLesson">
             <Button
               style={{ marginBottom: 2, width: 100 }}
               primary
@@ -110,7 +110,7 @@ function Lesson() {
             </h3>
           </div>
           <div className="lesson-buttons">
-          <Link to="/lessons/lesson">
+          <Link to="/lessons/ArrayLesson">
             <Button
               style={{ marginBottom: 2, width: 100 }}
               primary
