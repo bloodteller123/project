@@ -189,7 +189,7 @@ export default class Challenge extends Component {
                                     <Card
                                             description="Forget the concepts in the lessons?"
                                             style={localStyle.card}
-                                            extra={<Button primary style={{marginLeft:30}} onClick={}>Back to lesson</Button>}
+                                            extra={<Button primary style={{marginLeft:30}} >Back to lesson</Button>}
                                         />
                                     
                                 </div>
