@@ -150,7 +150,7 @@ Assume integer variable A holds 10 and variable B holds 20, then −</p>
                     Lesson Lists
                 </Button>
                 </Link>
-                <Link to="/challenge/0">
+                <Link to="/challenge/1">
                  <Button
                     style={{ float:'right' ,marginTop: 20, width: 100 }}
                     primary
