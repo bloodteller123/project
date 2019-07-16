@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/home.css" />
+    <title>Fun Kids</title>
+  </head>
+  <body>
+    <div class="topnav">
+      <h3>FunKids</h3>
+      <div class="topnav-right">
+        <a
+          onclick="document.getElementById('id01').style.display='block'"
+          style="width:auto;"
+          >Login</a
+        >
+        <a href="CreateAccount.html">Register</a>
+      </div>
+    </div>
+
+    <div class="bgimg">
+      <div class="middle">
+        <h1 style="color: Black">FUN KIDS</h1>
+
+        <button
+          onclick="document.getElementById('id01').style.display='block'"
+          style="width:auto;"
+        >
+          Login
+        </button>
+        <a href="CreateAccount.html" class="button">Register</a>
+
+        <h3>Programming for Kids</h3>
+        <p></p>
+        <hr />
+        <h4>Join in to learn the fun new way</h4>
+        <h4>Kids are learning to program!</h4>
+      </div>
+    </div>
+
+    <div id="id01" class="modal">
+      <form class="modal-content animate">
+        <div class="imgcontainer">
+          <span
+            onclick="document.getElementById('id01').style.display='none'"
+            class="close"
+            title="Close Modal"
+            >&times;</span
+          >
+          <img src="css/img/avatar.png" alt="Avatar" class="avatar" />
+        </div>
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input
+            type="text"
+            placeholder="Enter Username"
+            id="userName"
+            required
+          />
+
+          <label for="psw"><b>Password</b></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            id="psw"
+            required
+          />
+
+          <button type="submit" onClick="check()">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember" /> Remember
+            me
+          </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button
+            type="button"
+            onclick="document.getElementById('id01').style.display='none'"
+            class="cancelbtn"
+          >
+            Cancel
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      var modal = document.getElementById("id01");
+      var userName = document.getElementById("userName");
+      var psw = document.getElementById("psw");
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+
+      function store() {
+        localStorage.setItem("userName", userName.value);
+        localStorage.setItem("psw", psw.value);
+      }
+
+      function check() {
+        var savedName = localStorage.getItem("userName");
+        var savedPsw = localStorage.getItem("psw");
+
+        var userName = document.getElementById("userName");
+        var psw = document.getElementById("psw");
+
+        if (uname.value == savedName && psw.value == savedPsw) {
+          alert("Login Successful");
+        } else {
+          alert("incorrect username or password");
+        }
+      }
+    </script>
+  </body>
+</html>
