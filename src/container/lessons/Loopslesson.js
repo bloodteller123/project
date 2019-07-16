@@ -5,7 +5,7 @@ export default class Loopslesson extends Component {
     render() {
         return (
 <div className="mainContainer" style={{paddingLeft:70, paddingRight:70, paddingBottom:100}}>
-                <p>Lesson 3</p>
+                <p>Lesson 4</p>
 
                 <div style={{fontSize:30}}>
                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;There may be a situation when you need to execute a block of code several number of times. In general, statements are executed sequentially: The first statement in a function is executed first, followed by the second, and so on.<br/>

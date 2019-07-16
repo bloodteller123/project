@@ -16,7 +16,7 @@ export default class Operatorlesson extends Component {
     render() {
         return (
             <div className="mainContainer" style={{paddingLeft:70, paddingRight:70, paddingBottom:100}}>
-                <p>Lesson 3</p>
+                <p>Lesson 2</p>
 
                 <div style={{fontSize:30}}>
                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Arithmetic operators are used in mathematical expressions in the same way that they are used in algebra. The following table lists the arithmetic operators −
