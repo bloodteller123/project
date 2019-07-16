@@ -158,7 +158,7 @@ export default class Challenge extends Component {
         return (
             <div>
                 <div className="body" style={{paddingTop:20,paddingBottom: 50,backgroundColor:'#F3F3F3'}}>
-                    <div style={{textAlign:'center',fontSize:20}}>some header here</div>
+                    <div style={{textAlign:'center',fontSize:20}}>banner</div>
                     <div style={{display:'flex'}}>
                         <div className="leftContainer" style={{display: 'inline-block'}}> 
                             <div>
@@ -230,6 +230,14 @@ export default class Challenge extends Component {
                                                 description={this.state.output}
                                                 style={{marginLeft:30}}
                                             />
+                                        </div>
+                                        <div style={{}}>
+                                          {
+                                            this.state.output!==''?( !this.state.correct?<div style={{color:'red',fontWeight:200,fontSize:25}}>Opps! Seems like something wrong with your code!</div>
+                                              :<div style={{color:'green',fontWeight:200,fontSize:25}}>Congratulations!</div>)
+                                            :
+                                            null
+                                          }
                                         </div>
                                         <div className="nextLesson" style={{float:'right'}}>
                                             {
