@@ -23,6 +23,30 @@
   color: #61dafb;
 }
 
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  color: white;
+  background-color: #282c34;
+}
+
+nav h3 {
+  justify-content: flex-start;
+  justify-content: space-around;
+  font-size: 250%;
+}
+
+.nav-links {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  font-size: 120%;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
