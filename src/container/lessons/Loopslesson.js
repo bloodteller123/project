@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from "react-router-dom";
 import {Grid, Image,Table,Label,Button} from 'semantic-ui-react'
 
 export default class Loopslesson extends Component {
@@ -129,6 +130,7 @@ export default class Loopslesson extends Component {
                  </div>
                  
                 </div>
+                <Link to="/lessons/">
                  <Button
                     style={{ float:'left' ,marginTop: 20, width: 100 }}
                     primary
@@ -136,6 +138,7 @@ export default class Loopslesson extends Component {
                     >
                     Lesson Lists
                 </Button>
+                </Link>
                  <Button
                     style={{ float:'right' ,marginTop: 20, width: 100 }}
                     primary

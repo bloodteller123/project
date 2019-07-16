@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from "react-router-dom";
 import {Grid, Image,Table,Label,Button} from 'semantic-ui-react'
 
 export default class Arraylesson extends Component {
@@ -227,7 +228,7 @@ Instead of declaring individual variables, such as number0, number1, ..., and nu
 
 
 
-
+                 <Link to="/lessons/">
                  <Button
                     style={{ float:'left' ,marginTop: 20, width: 100 }}
                     primary
@@ -235,6 +236,7 @@ Instead of declaring individual variables, such as number0, number1, ..., and nu
                     >
                     Lesson Lists
                 </Button>
+                </Link>
                  <Button
                     style={{ float:'right' ,marginTop: 20, width: 100 }}
                     primary

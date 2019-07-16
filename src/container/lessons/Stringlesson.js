@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from "react-router-dom";
 import {Grid, Image,Table,Label,Button} from 'semantic-ui-react'
 
 export default class Stringlesson extends Component {
@@ -222,6 +223,7 @@ The Java platform provides the String class to create and manipulate strings</p>
                     </Table>
                     </div>
                  </div>
+                 <Link to="/lessons/">
                  <Button
                     style={{ float:'left' ,marginTop: 20, width: 100 }}
                     primary
@@ -229,6 +231,7 @@ The Java platform provides the String class to create and manipulate strings</p>
                     >
                     Lesson Lists
                 </Button>
+                </Link>
                  <Button
                     style={{ float:'right' ,marginTop: 20, width: 100 }}
                     primary

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import { Link } from "react-router-dom";
 
 import {Grid, Image,Table,Label,Button} from 'semantic-ui-react'
 export default class Variableslesson extends Component {
@@ -204,6 +204,7 @@ Following are valid examples of variable declaration and initialization in Java 
                     </div>
                 </div>
 
+                <Link to="/lessons/">
                  <Button
                     style={{ float:'left' ,marginTop: 20, width: 100 }}
                     primary
@@ -211,6 +212,7 @@ Following are valid examples of variable declaration and initialization in Java 
                     >
                     Lesson Lists
                 </Button>
+                </Link>
                  <Button
                     style={{ float:'right' ,marginTop: 20, width: 100 }}
                     primary
