@@ -16,125 +16,6 @@ function Lesson() {
             <h2>1</h2>
           </div>
           <div className="lesson-description">
-            <h2>Intro to the editor</h2>
-            <h3>
-              In this lesson we'll look at where we'll be working, the editor!
-              The editor is where you write your code for it to be read by the
-              computer. We'll be seeing line numbers, text colours and some
-              basic code to demonstrate.
-            </h3>
-          </div>
-          <div className="lesson-buttons">
-            <Button
-              style={{ marginBottom: 2, width: 100 }}
-              component={Link}
-              to={"/challenge/1"}
-              primary
-            >
-              Go to lesson!
-            </Button>
-            <Button
-              style={{ marginTop: 2, width: 100 }}
-              primary
-              onClick={console.log("hi")}
-            >
-              Try the challenge!
-            </Button>
-          </div>
-        </div>
-        <div className="lesson-box">
-          <div className="lesson-number">
-            <h2>2</h2>
-          </div>
-          <div className="lesson-description">
-            <h2>What is Java?</h2>
-            <h3>
-              You may have seen "3 Billion Devices Run Java", and this is no
-              exaggeration, it has been one of the most used languages for over
-              20 years! This lesson will be a quick overview to answer "What is
-              Java?".
-            </h3>
-          </div>
-          <div className="lesson-buttons">
-            <Button
-              style={{ marginBottom: 2, width: 100 }}
-              primary
-              onClick={console.log("hi")}
-            >
-              Go to lesson!
-            </Button>
-            <Button
-              style={{ marginTop: 2, width: 100 }}
-              primary
-              onClick={console.log("hi")}
-            >
-              Try the challenge!
-            </Button>
-          </div>
-        </div>
-        <div className="lesson-box">
-          <div className="lesson-number">
-            <h2>3</h2>
-          </div>
-          <div className="lesson-description">
-            <h2>Simple Syntax</h2>
-            <h3>
-              In this lesson we tackle some of the basic syntax of Java, such a
-              main() and system.out.println() to get a quick grasp of what's
-              happening
-            </h3>
-          </div>
-          <div className="lesson-buttons">
-            <Button
-              style={{ marginBottom: 2, width: 100 }}
-              primary
-              onClick={console.log("hi")}
-            >
-              Go to lesson!
-            </Button>
-            <Button
-              style={{ marginTop: 2, width: 100 }}
-              primary
-              onClick={console.log("hi")}
-            >
-              Try the challenge!
-            </Button>
-          </div>
-        </div>
-        <div className="lesson-box">
-          <div className="lesson-number">
-            <h2>4</h2>
-          </div>
-          <div className="lesson-description">
-            <h2>Commenting Code</h2>
-            <h3>
-              Sometimes when you're coding, you want to leave yourself or
-              someone else a note that isn't part of your code. This lessons
-              teaches you how to use comments to do just that.
-            </h3>
-          </div>
-          <div className="lesson-buttons">
-            <Button
-              style={{ marginBottom: 2, width: 100 }}
-              primary
-              onClick={console.log("hi")}
-            >
-              Go to lesson!
-            </Button>
-            <Button
-              style={{ marginTop: 2, width: 100 }}
-              primary
-              onClick={console.log("hi")}
-            >
-              Try the challenge!
-            </Button>
-          </div>
-        </div>
-        <div className="lesson-box">
-          <div className="lesson-number">
-            <h2>5</h2>
-          </div>
-          <div className="lesson-description">
             <h2>Variables</h2>
             <h3>
               Java uses variables in order to remember the data that it's using.
@@ -143,25 +24,19 @@ function Lesson() {
             </h3>
           </div>
           <div className="lesson-buttons">
+            <Link to="/lessons/lesson">
             <Button
               style={{ marginBottom: 2, width: 100 }}
               primary
-              onClick={console.log("hi")}
             >
               Go to lesson!
             </Button>
-            <Button
-              style={{ marginTop: 2, width: 100 }}
-              primary
-              onClick={console.log("hi")}
-            >
-              Try the challenge!
-            </Button>
+            </Link>
           </div>
         </div>
         <div className="lesson-box">
           <div className="lesson-number">
-            <h2>6</h2>
+            <h2>2</h2>
           </div>
           <div className="lesson-description">
             <h2>Operators</h2>
@@ -172,20 +47,77 @@ function Lesson() {
             </h3>
           </div>
           <div className="lesson-buttons">
+          <Link to="/lessons/lesson">
             <Button
               style={{ marginBottom: 2, width: 100 }}
               primary
-              onClick={console.log("hi")}
             >
               Go to lesson!
             </Button>
+            </Link>
+          </div>
+        </div>
+        <div className="lesson-box">
+          <div className="lesson-number">
+            <h2>3</h2>
+          </div>
+          <div className="lesson-description">
+            <h2>Strings</h2>
+            <h3>
+              In this lesson we tackle Strings, a data type Java uses to represent things like words and sentences. Strings can contain almost anything, and have many methods that can be used on them that will be covered.
+            </h3>
+          </div>
+          <div className="lesson-buttons">
+          <Link to="/lessons/lesson">
             <Button
-              style={{ marginTop: 2, width: 100 }}
+              style={{ marginBottom: 2, width: 100 }}
               primary
-              onClick={console.log("hi")}
             >
-              Try the challenge!
+              Go to lesson!
             </Button>
+            </Link>
+          </div>
+        </div>
+        <div className="lesson-box">
+          <div className="lesson-number">
+            <h2>4</h2>
+          </div>
+          <div className="lesson-description">
+            <h2>Loops</h2>
+            <h3>
+              Many times in coding you'll find yourself needing to do something multiple times. Loops are a way for your code to repeat itself, allowing for the code to be repeated based on logic you set.
+            </h3>
+          </div>
+          <div className="lesson-buttons">
+          <Link to="/lessons/lesson">
+            <Button
+              style={{ marginBottom: 2, width: 100 }}
+              primary
+            >
+              Go to lesson!
+            </Button>
+            </Link>
+          </div>
+        </div>
+        <div className="lesson-box">
+          <div className="lesson-number">
+            <h2>5</h2>
+          </div>
+          <div className="lesson-description">
+            <h2>Arrays</h2>
+            <h3>
+              While programming, you may have variables that are structured like a list. Arrays are what Java uses to represent these lists in a single variable. Creating arrays and their common uses are explored in this lesson. 
+            </h3>
+          </div>
+          <div className="lesson-buttons">
+          <Link to="/lessons/lesson">
+            <Button
+              style={{ marginBottom: 2, width: 100 }}
+              primary
+            >
+              Go to lesson!
+            </Button>
+            </Link>
           </div>
         </div>
       </div>
