@@ -6,7 +6,7 @@ export default class Stringlesson extends Component {
     render() {
         return (
             <div className="mainContainer" style={{paddingLeft:70, paddingRight:70, paddingBottom:100}}>
-                <p>Lesson 4</p>
+                <h1 style={{fontSize:50, paddingTop:8}}>Lesson 3</h1>
 
                 <div style={{fontSize:30}}>
                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Strings, which are widely used in Java programming, are a sequence of characters. In Java programming language, strings are treated as objects.

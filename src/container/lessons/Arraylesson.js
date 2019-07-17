@@ -6,18 +6,18 @@ export default class Arraylesson extends Component {
     render() {
         return (
 <div className="mainContainer" style={{paddingLeft:70, paddingRight:70, paddingBottom:100}}>
-                <p>Lesson 5</p>
+                <h1 style={{fontSize:50, paddingTop:8}}>Lesson 5</h1>
 
-                <div style={{fontSize:30}}>
+                <div style={{fontSize:16}}>
                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Java provides a data structure, the <b>array</b>, which stores a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type.
 
 Instead of declaring individual variables, such as number0, number1, ..., and number99, you declare one array variable such as numbers and use numbers[0], numbers[1], and ..., numbers[99] to represent individual variables.</p>
                  </div>
 
                  <div className='declareA'>
-                    <div style={{fontWeight:'bold',fontSize:30}}><p>Declaring Array Variables</p></div>
+                    <div style={{fontWeight:'bold',fontSize:20}}><p>Declaring Array Variables</p></div>
                     <div>
-                        <div style={{fontSize:20}}>To use an array in a program, you must declare a variable to reference the array, and you must specify the type of array the variable can reference. Here is the syntax for declaring an array variable −</div>
+                        <div style={{fontSize:16}}>To use an array in a program, you must declare a variable to reference the array, and you must specify the type of array the variable can reference. Here is the syntax for declaring an array variable −</div>
                         <div style={{fontWeight:'bold',fontSize:20}}>Syntax</div>
                         <div style={{backgroundColor:'#F3F3F3',paddingLeft:300}}>
                             <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{"dataType[] arrayRefVar;   // preferred way."}</code><br/>
@@ -26,16 +26,16 @@ Instead of declaring individual variables, such as number0, number1, ..., and nu
                     </div>
                     <div style={{marginTop:15}}>
                         <div className="example">
-                            <div style={{fontWeight:'bold',fontSize:30}}><p>Example</p></div>
-                            <div style={{fontSize:20}}>The following code snippets are examples of this syntax −</div>
+                            <div style={{fontWeight:'bold',fontSize:20}}><p>Example</p></div>
+                            <div style={{fontSize:16}}>The following code snippets are examples of this syntax −</div>
                             <div style={{backgroundColor:'#F3F3F3',paddingLeft:300}}>
                                 <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{"dataType[] arrayRefVar;   // preferred way."}</code><br/>
                                 <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{"dataType arrayRefVar[];  // works but not preferred way."}</code>
                             </div>
                         </div>
-                        <div style={{marginTop:15, fontSize:20}}>This will produce the following result −</div>
+                        <div style={{marginTop:15, fontSize:16}}>This will produce the following result −</div>
                         <div className='output'>
-                            <div style={{fontWeight:'bold',fontSize:30}}><p>Ouput</p></div>
+                            <div style={{fontWeight:'bold',fontSize:20}}><p>Ouput</p></div>
                             <div style={{backgroundColor:'#F3F3F3',paddingLeft:300}}>
                                 <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{"hello."}</code>
                                 <br />
@@ -47,38 +47,38 @@ Instead of declaring individual variables, such as number0, number1, ..., and nu
                  </div>
                  
                  <div className='createA'>
-                    <div style={{fontWeight:'bold',fontSize:30}}><p>Creating Arrays</p></div>
+                    <div style={{fontWeight:'bold',fontSize:20}}><p>Creating Arrays</p></div>
                     <div>
-                        <div style={{fontSize:20}}>You can create an array by using the new operator with the following syntax −</div>
+                        <div style={{fontSize:16}}>You can create an array by using the new operator with the following syntax −</div>
                         <div style={{fontWeight:'bold',fontSize:20}}>Syntax</div>
                         <div style={{backgroundColor:'#F3F3F3',paddingLeft:300}}>
                             <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{"arrayRefVar = new dataType[arraySize];"}</code>
                         </div>
-                        <div style={{fontSize:20}}>The above statement does two things −</div>
+                        <div style={{fontSize:16}}>The above statement does two things −</div>
                         <div><ul style={{listStyleType: 'none',fontWeight:25}}><li>1.It creates an array using new dataType[arraySize].</li><li>2.It assigns the reference of the newly created array to the variable arrayRefVar.</li></ul></div>
-                        <div style={{fontSize:20,marginTop:15}}>Declaring an array variable, creating an array, and assigning the reference of the array to the variable can be combined in one statement, as shown below −</div>
+                        <div style={{fontSize:16,marginTop:15}}>Declaring an array variable, creating an array, and assigning the reference of the array to the variable can be combined in one statement, as shown below −</div>
                         <div style={{backgroundColor:'#F3F3F3',paddingLeft:300}}>
                             <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{"dataType[] arrayRefVar = new dataType[arraySize];"}</code>
                         </div>
-                        <div style={{fontSize:20,marginTop:15}}>Alternatively you can create arrays as follows −</div>
+                        <div style={{fontSize:16,marginTop:15}}>Alternatively you can create arrays as follows −</div>
                         <div style={{backgroundColor:'#F3F3F3',paddingLeft:300}}>
                             <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{"dataType[] arrayRefVar = {value0, value1, ..., valuek};"}</code>
                         </div>
-                        <div style={{fontSize:20,marginTop:15}}>The array elements are accessed through the <b>index</b>. Array indices are 0-based; that is, they start from 0 to <b>arrayRefVar.length-1</b>.</div>             
+                        <div style={{fontSize:16,marginTop:15}}>The array elements are accessed through the <b>index</b>. Array indices are 0-based; that is, they start from 0 to <b>arrayRefVar.length-1</b>.</div>             
                     </div>
                     <div style={{marginTop:15}}>
                         <div className="example">
-                            <div style={{fontWeight:'bold',fontSize:30}}><p>Example</p></div>
-                            <div style={{fontSize:20}}>Following statement declares an array variable, myList, creates an array of 10 elements of double type and assigns its reference to myList −</div>
+                            <div style={{fontWeight:'bold',fontSize:20}}><p>Example</p></div>
+                            <div style={{fontSize:16}}>Following statement declares an array variable, myList, creates an array of 10 elements of double type and assigns its reference to myList −</div>
                             <div style={{backgroundColor:'#F3F3F3',paddingLeft:300}}>
                                 <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{"double[] myList = new double[10];"}</code><br/>
                             </div>
-                            <div style={{fontSize:20,marginTop:20}}>Following picture represents array myList. Here, myList holds ten double values and the indices are from 0 to 9.</div>
+                            <div style={{fontSize:16,marginTop:20}}>Following picture represents array myList. Here, myList holds ten double values and the indices are from 0 to 9.</div>
                             <div><Image src={require("../../assets/java_array.jpg")} size="large" style={{marginLeft:370}}/></div>
                         </div>
-                        <div style={{marginTop:15, fontSize:20}}>This will produce the following result −</div>
+                        <div style={{marginTop:15, fontSize:16}}>This will produce the following result −</div>
                         <div className='output'>
-                            <div style={{fontWeight:'bold',fontSize:30}}><p>Ouput</p></div>
+                            <div style={{fontWeight:'bold',fontSize:20}}><p>Ouput</p></div>
                             <div style={{backgroundColor:'#F3F3F3',paddingLeft:300}}>
                                 <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{"hello."}</code>
                                 <br />
@@ -90,12 +90,12 @@ Instead of declaring individual variables, such as number0, number1, ..., and nu
                  </div>
                  
                  <div className='processA'>
-                    <div style={{fontWeight:'bold',fontSize:30}}><p>Processing Arrays</p></div>
+                    <div style={{fontWeight:'bold',fontSize:20}}><p>Processing Arrays</p></div>
                     <div>
-                    <div style={{fontSize:20}}>When processing array elements, we often use either for loop or foreach loop because all of the elements in an array are of the same type and the size of the array is known.</div>
+                    <div style={{fontSize:16}}>When processing array elements, we often use either for loop or foreach loop because all of the elements in an array are of the same type and the size of the array is known.</div>
                         <div className="example">
-                            <div style={{fontWeight:'bold',fontSize:30}}><p>Example</p></div>
-                            <div style={{fontSize:20}}>Here is a complete example showing how to create, initialize, and process arrays −</div>
+                            <div style={{fontWeight:'bold',fontSize:20}}><p>Example</p></div>
+                            <div style={{fontSize:16}}>Here is a complete example showing how to create, initialize, and process arrays −</div>
                             <div style={{backgroundColor:'#F3F3F3',paddingLeft:300}}>
                                 <code>{"public class TestArray {"}</code>
                                 <br />
@@ -130,9 +130,9 @@ Instead of declaring individual variables, such as number0, number1, ..., and nu
                                 <code>{"}"}</code>
                             </div>
                         </div>
-                        <div style={{marginTop:15, fontSize:20}}>This will produce the following result −</div>
+                        <div style={{marginTop:15, fontSize:16}}>This will produce the following result −</div>
                         <div className='output'>
-                            <div style={{fontWeight:'bold',fontSize:30}}><p>Ouput</p></div>
+                            <div style={{fontWeight:'bold',fontSize:20}}><p>Ouput</p></div>
                             <div style={{backgroundColor:'#F3F3F3',paddingLeft:300}}>
                             <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{"1.9"}</code>
                             <br />
@@ -151,14 +151,14 @@ Instead of declaring individual variables, such as number0, number1, ..., and nu
                 </div>
                 
                 <div className='returnA'>
-                    <div style={{fontWeight:'bold',fontSize:30}}><p>Returning an Array from a Method</p></div>
+                    <div style={{fontWeight:'bold',fontSize:20}}><p>Returning an Array from a Method</p></div>
                     <div>
-                        <div style={{fontSize:20}}>A method may also return an array. For example, the following method returns an array that is the reversal of another array −</div>
+                        <div style={{fontSize:16}}>A method may also return an array. For example, the following method returns an array that is the reversal of another array −</div>
                        
                     </div>
                     <div style={{marginTop:15}}>
                         <div className="example">
-                            <div style={{fontWeight:'bold',fontSize:30}}><p>Example</p></div>
+                            <div style={{fontWeight:'bold',fontSize:20}}><p>Example</p></div>
                             
                             <div style={{backgroundColor:'#F3F3F3',paddingLeft:300}}>
                                 <code>{"public static int[] reverse(int[] list) {"}</code><br/>
@@ -176,8 +176,8 @@ Instead of declaring individual variables, such as number0, number1, ..., and nu
                  
 
                 <div className="stringMethods">
-                 <div style={{fontWeight:'bold',fontSize:30}}><p>The Arrays Class</p></div>
-                 <div style={{marginTop:15, fontSize:20}}>The java.util.Arrays class contains various static methods for sorting and searching arrays, comparing arrays, and filling array elements. These methods are overloaded for all primitive types.</div>
+                 <div style={{fontWeight:'bold',fontSize:20}}><p>The Arrays Class</p></div>
+                 <div style={{marginTop:15, fontSize:16}}>The java.util.Arrays class contains various static methods for sorting and searching arrays, comparing arrays, and filling array elements. These methods are overloaded for all primitive types.</div>
                     <div>
                         <Table celled>
                         <Table.Header>
