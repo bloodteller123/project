@@ -6,7 +6,7 @@ export default class Variableslesson extends Component {
     render() {
         return (
             <div className="mainContainer" style={{paddingLeft:70, paddingRight:70, paddingBottom:100}}>
-                <p>Lesson 2</p>
+                <h1 style={{fontSize:50, paddingTop:8}}>Lesson 1</h1>
 
                 <div style={{fontSize:30}}>
                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A variable provides us with named storage that our programs can manipulate. Each variable in Java has a specific type, which determines the size and layout of the variable's memory; the range of values that can be stored within that memory; and the set of operations that can be applied to the variable.

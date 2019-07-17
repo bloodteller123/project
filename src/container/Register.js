@@ -79,60 +79,6 @@ function Register() {
             </div>
           </div>
         </form>
-        <div id="id01" className="modal">
-          <form className="modal-content animate">
-            <div className="imgcontainer">
-              <span
-                onclick="document.getElementById('id01').style.display='none'"
-                className="close"
-                title="Close Modal"
-              >
-                ×
-              </span>
-              <img src="css/img/avatar.png" alt="Avatar" className="avatar" />
-            </div>
-            <div className="container">
-              <label htmlFor="userName">
-                <b>Username</b>
-              </label>
-              <input
-                type="text"
-                placeholder="Enter Username"
-                id="userName"
-                required
-              />
-              <label htmlFor="psw">
-                <b>Password</b>
-              </label>
-              <input
-                type="password"
-                placeholder="Enter Password"
-                id="psw"
-                required
-              />
-              <button type="submit" onclick="check()">
-                Login
-              </button>
-              <label>
-                <input
-                  type="checkbox"
-                  defaultChecked="checked"
-                  name="remember"
-                />{" "}
-                Remember me
-              </label>
-            </div>
-            <div className="container" style={{ backgroundColor: "#f1f1f1" }}>
-              <button
-                type="button"
-                onclick="document.getElementById('id01').style.display='none'"
-                className="cancelbtn"
-              >
-                Cancel
-              </button>
-            </div>
-          </form>
-        </div>
       </div>
     </div>
   );
