@@ -10,6 +10,7 @@ import VariableLesson from "./container/lessons/Variableslesson";
 import LoopLesson from "./container/lessons/Loopslesson";
 import Home from "./container/Home";
 import Register from "./container/Register";
+import Login from "./container/Login";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
       </nav>
       <Route path="/" exact component={Home} />
       <Route path="/register" exact component={Register} />
+      <Route path="/login" exact component={Login} />
       <Route path="/lessons/" exact component={Lesson} />
       <Route path="/challenge/:number" component={Challenge} />
       <Route path="/lessons/ArrayLesson" component={ArrayLesson} />
