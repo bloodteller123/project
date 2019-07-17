@@ -13,18 +13,10 @@ function Home() {
       <div className="middle">
         <h1 style={{ color: "Black" }}>FUN KIDS</h1>
         <div className="button-box">
-          <button
-            onclick="document.getElementById('id01').style.display='block'"
-            style={{ width: "auto" }}
-          >
-            Login
-          </button>
-          <button
-            onclick="document.getElementById('id01').style.display='block'"
-            style={{ width: "auto" }}
-          >
-            Register
-          </button>
+          <button style={{ width: "auto" }}>Login</button>
+          <Link to="/register">
+            <button style={{ width: "auto" }}>Register</button>
+          </Link>
         </div>
         <h3>Programming for Kids</h3>
         <p />
