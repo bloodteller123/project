@@ -11,7 +11,7 @@ import VariableLesson from "./container/lessons/Variableslesson";
 import LoopLesson from "./container/lessons/Loopslesson";
 import Home from "./container/Home";
 import Register from "./container/Register";
-import Login from "./container/Login";
+
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 export default class App extends Component {
