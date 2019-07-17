@@ -213,7 +213,7 @@ Following are valid examples of variable declaration and initialization in Java 
                     Lesson Lists
                 </Button>
                 </Link>
-                <Link to="/challenge/1">
+                <Link to="/challenge/0">
                  <Button
                     style={{ float:'right' ,marginTop: 20, width: 100 }}
                     primary
