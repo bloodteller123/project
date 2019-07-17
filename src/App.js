@@ -3,18 +3,21 @@ import "./App.css";
 
 import Challenge from "./container/Challenge";
 import Lesson from "./container/Lesson";
-import OperatorLesson from "./container/lessons/Operatorlesson"
-import ArrayLesson from "./container/lessons/Arraylesson"
-import StringLesson from "./container/lessons/Stringlesson"
-import VariableLesson from "./container/lessons/Variableslesson"
-import LoopLesson from "./container/lessons/Loopslesson"
+import OperatorLesson from "./container/lessons/Operatorlesson";
+import ArrayLesson from "./container/lessons/Arraylesson";
+import StringLesson from "./container/lessons/Stringlesson";
+import VariableLesson from "./container/lessons/Variableslesson";
+import LoopLesson from "./container/lessons/Loopslesson";
+import Home from "./container/Home";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
   return (
     <Router>
       <nav>
-        <h3>FunKids</h3>
+        <Link to="/" style={{ color: "white" }}>
+          <h3>FunKids</h3>
+        </Link>
         <ul style={{ marginLeft: 250 }} className="nav-links">
           <li>
             <Link style={{ color: "white" }} to="/lessons/">
@@ -28,7 +31,7 @@ function App() {
           </li>
         </ul>
       </nav>
-      <Route path="/" exact />
+      <Route path="/" exact component={Home} />
       <Route path="/lessons/" exact component={Lesson} />
       <Route path="/challenge/:number" component={Challenge} />
       <Route path="/lessons/ArrayLesson" component={ArrayLesson} />
