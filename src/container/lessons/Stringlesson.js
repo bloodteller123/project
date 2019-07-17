@@ -8,24 +8,24 @@ export default class Stringlesson extends Component {
             <div className="mainContainer" style={{paddingLeft:70, paddingRight:70, paddingBottom:100}}>
                 <h1 style={{fontSize:50, paddingTop:8}}>Lesson 3</h1>
 
-                <div style={{fontSize:30}}>
+                <div style={{fontSize:16}}>
                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Strings, which are widely used in Java programming, are a sequence of characters. In Java programming language, strings are treated as objects.
 
 The Java platform provides the String class to create and manipulate strings</p>
                  </div>
                  <div className='createS'>
-                    <div style={{fontWeight:'bold',fontSize:30}}><p>Creating Strings</p></div>
+                    <div style={{fontWeight:'bold',fontSize:20}}><p>Creating Strings</p></div>
                     <div>
-                        <div style={{fontSize:20}}>The most direct way to create a string is to write −</div>
+                        <div style={{fontSize:16}}>The most direct way to create a string is to write −</div>
                         <div style={{backgroundColor:'#F3F3F3',paddingLeft:300}}>
                             <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{"String greeting = 'Hello world!';"}</code>
                         </div>
-                        <div style={{fontSize:20}}>Whenever it encounters a string literal in your code, the compiler creates a String object with its value in this case, "Hello world!'.</div>
+                        <div style={{fontSize:16}}>Whenever it encounters a string literal in your code, the compiler creates a String object with its value in this case, "Hello world!'.</div>
                     </div>
-                    <div style={{marginTop:15}}>
-                    <div style={{fontSize:20}}>As with any other object, you can create String objects by using the new keyword and a constructor. The String class has 11 constructors that allow you to provide the initial value of the string using different sources, such as an array of characters.</div>
+                    <div style={{marginTop:5}}>
+                    <div style={{fontSize:16}}>As with any other object, you can create String objects by using the new keyword and a constructor. The String class has 11 constructors that allow you to provide the initial value of the string using different sources, such as an array of characters.</div>
                     <div className="example">
-                        <div style={{fontWeight:'bold',fontSize:30}}><p>Example</p></div>
+                        <div style={{fontWeight:'bold',fontSize:20}}><p>Example</p></div>
                         <div style={{backgroundColor:'#F3F3F3',paddingLeft:300}}>
                             <code>{"public class StringDemo {"}</code>
                             <br />
@@ -42,9 +42,9 @@ The Java platform provides the String class to create and manipulate strings</p>
                             <code>{"}"}</code>
                         </div>
                     </div>
-                    <div style={{marginTop:15, fontSize:20}}>This will produce the following result −</div>
+                    <div style={{marginTop:15, fontSize:16}}>This will produce the following result −</div>
                     <div className='output'>
-                        <div style={{fontWeight:'bold',fontSize:30}}><p>Ouput</p></div>
+                        <div style={{fontWeight:'bold',fontSize:20}}><p>Ouput</p></div>
                         <div style={{backgroundColor:'#F3F3F3',paddingLeft:300}}>
                             <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{"hello."}</code>
                             <br />
@@ -55,13 +55,13 @@ The Java platform provides the String class to create and manipulate strings</p>
                  
                  </div>
                  <div className='stringL'>
-                    <div style={{fontWeight:'bold',fontSize:30}}><p>String Length</p></div>
-                    <div style={{fontSize:20,marginTop:15}}>The following program is an example of <b>length()</b>, method String class.</div>
+                    <div style={{fontWeight:'bold',fontSize:20}}><p>String Length</p></div>
+                    <div style={{fontSize:16,marginTop:5}}>The following program is an example of <b>length()</b>, method String class.</div>
                     
-                    <div style={{marginTop:15}}>
-                        <div style={{fontSize:20}}>Methods used to obtain information about an object are known as <b>accessor methods</b>. One accessor method that you can use with strings is the length() method, which returns the number of characters contained in the string object.</div>
+                    <div style={{marginTop:5}}>
+                        <div style={{fontSize:16}}>Methods used to obtain information about an object are known as <b>accessor methods</b>. One accessor method that you can use with strings is the length() method, which returns the number of characters contained in the string object.</div>
                         <div className="example">
-                            <div style={{fontWeight:'bold',fontSize:30}}><p>Example</p></div>
+                            <div style={{fontWeight:'bold',fontSize:20}}><p>Example</p></div>
                             <div style={{backgroundColor:'#F3F3F3',paddingLeft:300}}>
                                 <code>{"public class StringDemo {"}</code>
                                 <br />
@@ -78,9 +78,9 @@ The Java platform provides the String class to create and manipulate strings</p>
                                 <code>{"}"}</code>
                             </div>
                         </div>
-                        <div style={{marginTop:15, fontSize:20}}>This will produce the following result −</div>
+                        <div style={{marginTop:15, fontSize:16}}>This will produce the following result −</div>
                         <div className='output'>
-                        <div style={{fontWeight:'bold',fontSize:30}}><p>Ouput</p></div>
+                        <div style={{fontWeight:'bold',fontSize:20}}><p>Ouput</p></div>
                         <div style={{backgroundColor:'#F3F3F3',paddingLeft:300}}>
                             <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{"String Length is : 17"}</code>
                             <br />
@@ -91,27 +91,27 @@ The Java platform provides the String class to create and manipulate strings</p>
                  
                  </div>
                  <div className='concaS'>
-                    <div style={{fontWeight:'bold',fontSize:30}}><p>Concatenating Strings</p></div>
+                    <div style={{fontWeight:'bold',fontSize:20}}><p>Concatenating Strings</p></div>
                     <div>
-                        <div style={{fontSize:20,marginTop:15}}>This returns a new string that is string1 with string2 added to it at the end. You can also use the concat() method with string literals, as in −</div>
+                        <div style={{fontSize:16,marginTop:5}}>This returns a new string that is string1 with string2 added to it at the end. You can also use the concat() method with string literals, as in −</div>
                         <div style={{backgroundColor:'#F3F3F3',paddingLeft:300}}>
                             <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{"'My name is '.concat('Zara');"}</code>
                         </div>
 
-                        <div style={{fontSize:20,marginTop:15}}>Strings are more commonly concatenated with the + operator, as in −</div>
+                        <div style={{fontSize:16,marginTop:5}}>Strings are more commonly concatenated with the + operator, as in −</div>
                         <div style={{backgroundColor:'#F3F3F3',paddingLeft:300}}>
                             <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{"'Hello,' + ' world' + '!'"}</code>
                         </div>
 
-                        <div style={{fontSize:20,marginTop:15}}>which results in −</div>
+                        <div style={{fontSize:16,marginTop:5}}>which results in −</div>
                         <div style={{backgroundColor:'#F3F3F3',paddingLeft:300}}>
                             <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{"'Hello, world!'"}</code>
                         </div>
-                        <div style={{fontSize:20,marginTop:5}}>Let us look at the following example −</div>
+                        <div style={{fontSize:16,marginTop:5}}>Let us look at the following example −</div>
                     </div>
                     <div style={{marginTop:15}}>
                         <div className="example">
-                            <div style={{fontWeight:'bold',fontSize:30}}><p>Example</p></div>
+                            <div style={{fontWeight:'bold',fontSize:20}}><p>Example</p></div>
                             <div style={{backgroundColor:'#F3F3F3',paddingLeft:300}}>
                                 <code>{"public class StringDemo {"}</code>
                                 <br />
@@ -126,9 +126,9 @@ The Java platform provides the String class to create and manipulate strings</p>
                                 <code>{"}"}</code>
                             </div>
                     </div>
-                    <div style={{marginTop:15, fontSize:20}}>This will produce the following result −</div>
+                    <div style={{marginTop:15, fontSize:16}}>This will produce the following result −</div>
                     <div className='output'>
-                        <div style={{fontWeight:'bold',fontSize:30}}><p>Ouput</p></div>
+                        <div style={{fontWeight:'bold',fontSize:20}}><p>Ouput</p></div>
                         <div style={{backgroundColor:'#F3F3F3',paddingLeft:300}}>
                             <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{"Dot saw I was Tod."}</code>
                             <br />
@@ -140,8 +140,8 @@ The Java platform provides the String class to create and manipulate strings</p>
                  </div>
                  
                  <div className="stringMethods">
-                 <div style={{fontWeight:'bold',fontSize:30}}><p>String Methods</p></div>
-                 <div style={{marginTop:15, fontSize:20}}>Here is the example of methods supported by String class −</div>
+                 <div style={{fontWeight:'bold',fontSize:20}}><p>String Methods</p></div>
+                 <div style={{marginTop:5, fontSize:16}}>Here is the example of methods supported by String class −</div>
                     <div>
                         <Table celled>
                         <Table.Header>
