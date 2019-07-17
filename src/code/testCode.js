@@ -21,7 +21,8 @@ const testCode = [
     description:
       "Can you find what is wrong with the codes here and correct it (print the value of a)?",
     hint: "Recall the scope of local variables\n and what StudentAge() does",
-    expectedResult: "Student age is : 5\n"
+    expectedResult: "Student age is : 5\n",
+    page: "/lessons/VariableLesson"
   },
   {
     challengeTitel: "Challenge ",
@@ -35,7 +36,8 @@ const testCode = [
     description:
       'What is the final result of val? Please replace "someValueHere" with your result',
     hint: "Rember increment sign does not change variable value immediately",
-    expectedResult: "true\n"
+    expectedResult: "true\n",
+    page: "/lessons/OperatorLesson"
   },
   {
     challengeTitel: "Challenge ",
@@ -50,7 +52,8 @@ const testCode = [
     description:
       "Tim wants s3 to be concatenation of s1 and s2, but he does not know what to do, can you help him? ",
     hint: "Recall what method does the concatenation job",
-    expectedResult: "funkids\n"
+    expectedResult: "funkids\n",
+    page: "/lessons/StringLesson"
   },
   {
     challengeTitel: "Challenge ",
@@ -67,7 +70,8 @@ const testCode = [
     description:
       "How many times val is incremented (ie. what is result of val after the for loop)?",
     hint: "observe how local variables i changes in the loop",
-    expectedResult: "true\n"
+    expectedResult: "true\n",
+    page: "/lessons/LoopLesson"
   },
   {
     challengeTitel: "Challenge ",
@@ -88,7 +92,8 @@ const testCode = [
       "James is looking for the summation of numbers in the array, can you help him?",
     hint:
       "Recall the combination of loop and arrays as well as how to access element in arrays",
-    expectedResult: "Sum is: 29\n"
+    expectedResult: "Sum is: 29\n",
+    page: "/lessons/ArrayLesson"
   }
 ];
 
