@@ -60,8 +60,6 @@ export default class App extends Component {
                 </Link>
               </li>
             ) : (
-              /* CLEAR USERNAME/PASSWORD WHEN ITS IMPLEMETNED*/
-
               <li>
                 <Link style={{ color: "white" }} to="/login">
                   Login

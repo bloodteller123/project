@@ -62,7 +62,7 @@ export default class Login extends Component {
               Login
             </Button>
           </LinkContainer>
-          <Link to="/login">
+          <Link to="/register">
             <h6>Don't have an account? Register now!</h6>
           </Link>
         </form>
