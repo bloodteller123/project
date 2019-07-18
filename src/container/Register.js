@@ -4,6 +4,8 @@ import { Button } from "semantic-ui-react";
 import { Link, History, withRouter } from "react-router-dom";
 import Image from "./img/bground.png";
 
+import { LinkContainer } from "react-router-bootstrap";
+
 import {
   
   FormGroup,
@@ -124,15 +126,20 @@ export default class Register extends Component {
             type="password"
           />
         </FormGroup>
-        <LoaderButton
-          block
-          bsSize="large"
-          disabled={!this.validateForm()}
-          type="submit"
-          isLoading={this.state.isLoading}
-          text="Signup"
-          loadingText="Signing up…"
-        />
+        <LinkContainer to="/login/">
+            <Button
+              block
+              bsSize="large"
+              disabled={!this.validateForm()}
+              isLoading={this.state.isLoading}
+              onClick={() =>
+                this.props.onLogin(this.state.username, this.state.password)
+              }
+              type="submit"
+            >
+              Sign Up
+            </Button>
+          </LinkContainer>
       </form>
     );
   }
