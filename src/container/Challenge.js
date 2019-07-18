@@ -165,11 +165,6 @@ export default class Challenge extends Component {
                 <Comment.Text>
                   <p>{commentObject.newComment}</p>
                 </Comment.Text>
-                <Comment.Actions>
-                  <Comment.Action onClick={() => console.log("hha")}>
-                    Reply
-                  </Comment.Action>
-                </Comment.Actions>
               </Comment.Content>
               {console.log(commentObject)}
             </Comment>
@@ -342,11 +337,6 @@ export default class Challenge extends Component {
                           Thanks as well!
                         </p>
                       </Comment.Text>
-                      <Comment.Actions>
-                        <Comment.Action onClick={() => console.log("hha")}>
-                          Reply
-                        </Comment.Action>
-                      </Comment.Actions>
                     </Comment.Content>
                   </Comment>
                   <Comment>
@@ -359,9 +349,6 @@ export default class Challenge extends Component {
                       <Comment.Text>
                         Dude, this is awesome. Thanks so much
                       </Comment.Text>
-                      <Comment.Actions>
-                        <Comment.Action>Reply</Comment.Action>
-                      </Comment.Actions>
                     </Comment.Content>
                   </Comment>
                   <Comment>
@@ -375,9 +362,6 @@ export default class Challenge extends Component {
                         <span>Today at 5:42PM</span>
                       </Comment.Metadata>
                       <Comment.Text>Ahhh It's so difficult</Comment.Text>
-                      <Comment.Actions>
-                        <a>Reply</a>
-                      </Comment.Actions>
                     </Comment.Content>
                   </Comment>
                   {comments[this.props.match.params.number].map(
