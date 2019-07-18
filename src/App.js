@@ -22,14 +22,14 @@ export default class App extends Component {
     this.setState({ loggedIn: false });
     this.setState({ username: "" });
     this.setState({ password: "" });
-    localStorage.setItem("username", "");
+    localStorage.setItem("userName", "");
   };
 
   onLogin = (username, pass) => {
     this.setState({ loggedIn: true });
     this.setState({ username: username });
     this.setState({ password: pass });
-    localStorage.setItem("username", username);
+    localStorage.setItem("userName", username);
   };
 
   render() {
