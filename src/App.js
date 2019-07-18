@@ -56,7 +56,7 @@ export default class App extends Component {
                     (console.log(this.state.username), () => this.onLogout())
                   }
                 >
-                  Logout
+                  Hello {this.state.username} - Logout
                 </Link>
               </li>
             ) : (
