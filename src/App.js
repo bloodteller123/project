@@ -14,7 +14,7 @@ import Register from "./container/Register";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 export default class App extends Component {
-  state = { loggedIn: true };
+  state = { loggedIn: false };
   username = {};
   password = {};
 
@@ -22,12 +22,14 @@ export default class App extends Component {
     this.setState({ loggedIn: false });
     this.setState({ username: "" });
     this.setState({ password: "" });
+    localStorage.setItem("username", "");
   };
 
   onLogin = (username, pass) => {
     this.setState({ loggedIn: true });
     this.setState({ username: username });
     this.setState({ password: pass });
+    localStorage.setItem("username", username);
   };
 
   render() {
