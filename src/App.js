@@ -71,7 +71,11 @@ export default class App extends Component {
           </ul>
         </nav>
         <Route path="/" exact component={Home} />
-        <Route path="/register" exact component={Register} />
+        <Route
+          path="/register"
+          exact
+          render={props => <Register {...props} onLogin={this.onLogin} />}
+        />
         <Route
           path="/login"
           render={props => <Login {...props} onLogin={this.onLogin} />}

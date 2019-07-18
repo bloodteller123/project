@@ -3,13 +3,9 @@ import "./Register.css";
 import { Button } from "semantic-ui-react";
 import { Link, History, withRouter } from "react-router-dom";
 import Image from "./img/bground.png";
+import { LinkContainer } from "react-router-bootstrap";
 
-import {
-  
-  FormGroup,
-  FormControl,
-  FormLabel
-} from "react-bootstrap";
+import { FormGroup, FormControl, FormLabel } from "react-bootstrap";
 import LoaderButton from "react-bootstrap-button-loader";
 
 export default class Register extends Component {
@@ -44,7 +40,7 @@ export default class Register extends Component {
     this.setState({
       [event.target.id]: event.target.value
     });
-  }
+  };
 
   handleSubmit = async event => {
     event.preventDefault();
@@ -54,13 +50,13 @@ export default class Register extends Component {
     this.setState({ newUser: "test" });
 
     this.setState({ isLoading: false });
-  }
+  };
 
   handleConfirmationSubmit = async event => {
     event.preventDefault();
 
     this.setState({ isLoading: true });
-  }
+  };
 
   renderConfirmationForm() {
     return (
@@ -124,15 +120,20 @@ export default class Register extends Component {
             type="password"
           />
         </FormGroup>
-        <LoaderButton
-          block
-          bsSize="large"
-          disabled={!this.validateForm()}
-          type="submit"
-          isLoading={this.state.isLoading}
-          text="Signup"
-          loadingText="Signing up…"
-        />
+        <LinkContainer to="/lessons/">
+          <LoaderButton
+            block
+            bsSize="large"
+            disabled={!this.validateForm()}
+            type="submit"
+            isLoading={this.state.isLoading}
+            text="Signup"
+            loadingText="Signing up…"
+            onClick={() =>
+              this.props.onLogin(this.state.username, this.state.password)
+            }
+          />
+        </LinkContainer>
       </form>
     );
   }
