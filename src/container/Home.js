@@ -14,17 +14,21 @@ function Home() {
         <h1 style={{ color: "Black" }}>FUN KIDS</h1>
         <div className="button-box">
           <Link to="/login">
-            <button style={{ width: "auto" }}>Login</button>
+            <Button style={{ marginBottom: 2, width: 120 }} primary>
+              Login
+            </Button>
           </Link>
           <Link to="/register">
-            <button style={{ width: "auto" }}>Register</button>
+            <Button style={{ marginBottom: 2, width: 120 }} primary>
+              Register
+            </Button>
           </Link>
         </div>
         <h3>Programming for Kids</h3>
         <p />
         <hr />
         <h4>Join in to learn the fun new way</h4>
-        <h4>Kids are learning to program!</h4>
+        <h4>kids are learning to program!</h4>
       </div>
     </div>
   );
