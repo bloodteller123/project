@@ -1,87 +1,149 @@
-import React from "react";
+import React, { Component } from "react";
 import "./Register.css";
 import { Button } from "semantic-ui-react";
 import { Link, History, withRouter } from "react-router-dom";
 import Image from "./img/bground.png";
 
-function Register() {
-  return (
-    <div>
-      <title> Fun Kids</title>
-      <div style={{ paddingLeft: "16px" }}>
-        <form
-          style={{
-            border: "1px solid #ccc",
-            marginTop: 25,
-            maxWidth: "70%",
-            marginLeft: "13%"
-          }}
-        >
-          <div className="container">
-            <h1>Get Started Today!</h1>
-            <hr />
-            <label htmlFor="username">
-              <b>Username</b>
-            </label>
-            <input
-              type="text"
-              placeholder="Enter Username"
-              id="userName"
-              required
-            />
-            <label htmlFor="fname">
-              <b>First Name</b>
-            </label>
-            <input
-              type="text"
-              placeholder="Enter First Name"
-              id="fname"
-              required
-            />
-            <label htmlFor="lname">
-              <b>Last Name</b>
-            </label>
-            <input
-              type="text"
-              placeholder="Enter Last Name"
-              id="lname"
-              required
-            />
-            <label htmlFor="bday">
-              <b>Date of Birth</b>
-            </label>
-            <input type="date" id="bday" required />
-            <p />
-            <label htmlFor="email">
-              <b>Email</b>
-            </label>
-            <input type="text" placeholder="Enter Email" id="email" required />
-            <label htmlFor="psw">
-              <b>Password</b>
-            </label>
-            <input
-              type="password"
-              placeholder="Enter Password"
-              id="psw"
-              required
-            />
-            <div className="clearfix">
-              <Link to="/">
-                <button type="button" className="cancelbtn">
-                  Cancel
-                </button>
-              </Link>
-              <Link to="/lessons/">
-                <button type="submit" className="signupbtn">
-                  Submit
-                </button>
-              </Link>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  );
-}
+import {
+  
+  FormGroup,
+  FormControl,
+  FormLabel
+} from "react-bootstrap";
+import LoaderButton from "react-bootstrap-button-loader";
 
-export default Register;
+export default class Register extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      isLoading: false,
+      username: "",
+      email: "",
+      password: "",
+      confirmPassword: "",
+      confirmationCode: "",
+      newUser: null
+    };
+  }
+
+  validateForm() {
+    return (
+      this.state.username.length > 0 &&
+      this.state.email.length > 0 &&
+      this.state.password.length > 0 &&
+      this.state.password === this.state.confirmPassword
+    );
+  }
+
+  validateConfirmationForm() {
+    return this.state.confirmationCode.length > 0;
+  }
+
+  handleChange = event => {
+    this.setState({
+      [event.target.id]: event.target.value
+    });
+  }
+
+  handleSubmit = async event => {
+    event.preventDefault();
+
+    this.setState({ isLoading: true });
+
+    this.setState({ newUser: "test" });
+
+    this.setState({ isLoading: false });
+  }
+
+  handleConfirmationSubmit = async event => {
+    event.preventDefault();
+
+    this.setState({ isLoading: true });
+  }
+
+  renderConfirmationForm() {
+    return (
+      <form onSubmit={this.handleConfirmationSubmit}>
+        <FormGroup controlId="confirmationCode" bsSize="large">
+          <FormLabel>Confirmation Code</FormLabel>
+          <FormControl
+            autoFocus
+            type="tel"
+            value={this.state.confirmationCode}
+            onChange={this.handleChange}
+          />
+        </FormGroup>
+        <LoaderButton
+          block
+          bsSize="large"
+          disabled={!this.validateConfirmationForm()}
+          type="submit"
+          isLoading={this.state.isLoading}
+          text="Verify"
+          loadingText="Verifying…"
+        />
+      </form>
+    );
+  }
+
+  renderForm() {
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <FormGroup controlId="username" bsSize="large">
+          <FormLabel>Username</FormLabel>
+          <FormControl
+            autoFocus
+            type="username"
+            value={this.state.username}
+            onChange={this.handleChange}
+          />
+        </FormGroup>
+        <FormGroup controlId="email" bsSize="large">
+          <FormLabel>Email</FormLabel>
+          <FormControl
+            autoFocus
+            type="email"
+            value={this.state.email}
+            onChange={this.handleChange}
+          />
+        </FormGroup>
+        <FormGroup controlId="password" bsSize="large">
+          <FormLabel>Password</FormLabel>
+          <FormControl
+            value={this.state.password}
+            onChange={this.handleChange}
+            type="password"
+          />
+        </FormGroup>
+        <FormGroup controlId="confirmPassword" bsSize="large">
+          <FormLabel>Confirm Password</FormLabel>
+          <FormControl
+            value={this.state.confirmPassword}
+            onChange={this.handleChange}
+            type="password"
+          />
+        </FormGroup>
+        <LoaderButton
+          block
+          bsSize="large"
+          disabled={!this.validateForm()}
+          type="submit"
+          isLoading={this.state.isLoading}
+          text="Signup"
+          loadingText="Signing up…"
+        />
+      </form>
+    );
+  }
+
+  render() {
+    return (
+      <div className="Register">
+        {this.state.newUser === null
+          ? this.renderForm()
+          : this.renderConfirmationForm()}
+      </div>
+    );
+  }
+}
