@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import { LinkContainer } from "react-router-bootstrap";
 import { Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
 import "./Login.css";
@@ -61,6 +62,9 @@ export default class Login extends Component {
               Login
             </Button>
           </LinkContainer>
+          <Link to="/login">
+            <h6>Don't have an account? Register now!</h6>
+          </Link>
         </form>
       </div>
     );
