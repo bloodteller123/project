@@ -28,7 +28,7 @@ export default class Challenge extends Component {
       displayHintToggle: false,
       tCode: testCode[this.props.match.params.number].code,
       description: testCode[this.props.match.params.number].description,
-      challengeNumber: this.props.match.params.number + 1,
+      challengeNumber: new Number(this.props.match.params.number) + 1,
       title: testCode[this.props.match.params.number].challengeTitel,
       hint: testCode[this.props.match.params.number].hint,
       page: testCode[this.props.match.params.number].page,
