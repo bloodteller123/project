@@ -38,9 +38,15 @@ export default class App extends Component {
     return (
       <Router>
         <nav>
-          <Link to="/" style={{ color: "white" }}>
-            <h3>FunKids</h3>
-          </Link>
+          {loggedIn ? (
+            <Link to="/lessons/" style={{ color: "white" }}>
+              <h3>FunKids</h3>
+            </Link>
+          ) : (
+            <Link to="/" style={{ color: "white" }}>
+              <h3>FunKids</h3>
+            </Link>
+          )}
           <ul style={{ marginLeft: 250 }} className="nav-links">
             <li>
               <Link style={{ color: "white" }} to="/lessons/">
