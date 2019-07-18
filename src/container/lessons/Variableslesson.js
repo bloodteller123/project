@@ -8,7 +8,7 @@ export default class Variableslesson extends Component {
             <div className="mainContainer" style={{paddingLeft:70, paddingRight:70, paddingBottom:100}}>
                 <h1 style={{fontSize:50, paddingTop:8}}>Lesson 1</h1>
 
-                <div style={{fontSize:30}}>
+                <div style={{fontSize:16}}>
                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A variable provides us with named storage that our programs can manipulate. Each variable in Java has a specific type, which determines the size and layout of the variable's memory; the range of values that can be stored within that memory; and the set of operations that can be applied to the variable.
 
 You must declare all variables before they can be used. Following is the basic form of a variable declaration −</p>
@@ -19,7 +19,7 @@ You must declare all variables before they can be used. Following is the basic f
                         <br />
                     </div>
                 </div>
-                <div style={{fontSize:30,marginTop:15}}>
+                <div style={{fontSize:16,marginTop:15}}>
                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here data type is one of Java's datatypes and variable is the name of the variable. To declare more than one variable of the specified type, you can use a comma-separated list.
 
 Following are valid examples of variable declaration and initialization in Java −</p>
@@ -39,7 +39,7 @@ Following are valid examples of variable declaration and initialization in Java 
                     </div>
                 </div>
                 <div >
-                    <div style={{fontSize:30}}>There are three kinds of variables in Java −</div>
+                    <div style={{fontSize:16}}>There are three kinds of variables in Java −</div>
                     <div style={{marginTop:15}}>
                         <ul style={{listStyleType: 'none',fontWeight:25}}>
                             <li>1.Local variables</li>
@@ -50,7 +50,7 @@ Following are valid examples of variable declaration and initialization in Java 
                 </div>
                 
                 <div className='localV'>
-                    <div style={{fontWeight:'bold',fontSize:30}}><p>Local Variables</p></div>
+                    <div style={{fontWeight:'bold',fontSize:20}}><p>Local Variables</p></div>
                     <div style={{marginTop:15}}>
                         <ul style={{listStyleType: 'none',fontWeight:25}}>
                             <li>1.Local variables are declared in methods, constructors, or blocks.</li>
@@ -60,7 +60,7 @@ Following are valid examples of variable declaration and initialization in Java 
                         </ul>
                     </div>
                     <div className="example">
-                        <div style={{fontWeight:'bold',fontSize:30}}><p>Example</p></div>
+                        <div style={{fontWeight:'bold',fontSize:20}}><p>Example</p></div>
                         <div style={{backgroundColor:'#F3F3F3',paddingLeft:300}}>
                             <code>{"public class Test {"}</code>
                             <br />
@@ -86,9 +86,9 @@ Following are valid examples of variable declaration and initialization in Java 
                             <code>{"}"}</code>
                         </div>
                     </div>
-                    <div style={{marginTop:15, fontSize:20}}>This will produce the following result −</div>
+                    <div style={{marginTop:15, fontSize:16}}>This will produce the following result −</div>
                     <div className='output'>
-                        <div style={{fontWeight:'bold',fontSize:30}}><p>Ouput</p></div>
+                        <div style={{fontWeight:'bold',fontSize:20}}><p>Ouput</p></div>
                         <div style={{backgroundColor:'#F3F3F3',paddingLeft:300}}>
                             <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{"Puppy age is: 7"}</code>
                             <br />
@@ -97,7 +97,7 @@ Following are valid examples of variable declaration and initialization in Java 
                     </div>
                 </div>
                 <div className='instanceV'>
-                    <div style={{fontWeight:'bold',fontSize:30}}><p>Instance Variables</p></div>
+                    <div style={{fontWeight:'bold',fontSize:20}}><p>Instance Variables</p></div>
                     <div style={{marginTop:15}}>
                         <ul style={{listStyleType: 'none',fontWeight:25}}>
                             <li>1.Instance variables are declared in a class, but outside a method, constructor or any block</li>
@@ -108,7 +108,7 @@ Following are valid examples of variable declaration and initialization in Java 
                         </ul>
                     </div>
                     <div className="example">
-                        <div style={{fontWeight:'bold',fontSize:30}}><p>Example</p></div>
+                        <div style={{fontWeight:'bold',fontSize:20}}><p>Example</p></div>
                         <div style={{backgroundColor:'#F3F3F3',paddingLeft:300}}>
                             <code>{"import java.io.*;"}</code>
                             <code>{"public class Employee {"}</code>
@@ -147,9 +147,9 @@ Following are valid examples of variable declaration and initialization in Java 
                             <code>{"}"}</code>
                         </div>
                     </div>
-                    <div style={{marginTop:15, fontSize:20}}>This will produce the following result −</div>
+                    <div style={{marginTop:15, fontSize:16}}>This will produce the following result −</div>
                     <div className='output'>
-                        <div style={{fontWeight:'bold',fontSize:30}}><p>Ouput</p></div>
+                        <div style={{fontWeight:'bold',fontSize:20}}><p>Ouput</p></div>
                         <div style={{backgroundColor:'#F3F3F3',paddingLeft:300}}>
                             <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{"name  : Ransika"}</code>
                             <br />
@@ -159,7 +159,7 @@ Following are valid examples of variable declaration and initialization in Java 
                     </div>
                 </div>
                 <div className='classV'>
-                    <div style={{fontWeight:'bold',fontSize:30}}><p>Class Variables</p></div>
+                    <div style={{fontWeight:'bold',fontSize:20}}><p>Class Variables</p></div>
                     <div style={{marginTop:15}}>
                         <ul style={{listStyleType: 'none',fontWeight:25}}>
                             <li>1.Class variables also known as static variables are declared with the static keyword in a class, but outside a method, constructor or a block</li>
@@ -170,7 +170,7 @@ Following are valid examples of variable declaration and initialization in Java 
                         </ul>
                     </div>
                     <div className="example">
-                        <div style={{fontWeight:'bold',fontSize:30}}><p>Example</p></div>
+                        <div style={{fontWeight:'bold',fontSize:20}}><p>Example</p></div>
                         <div style={{backgroundColor:'#F3F3F3',paddingLeft:300}}>
                             <code>{"import java.io.*;"}</code>
                             <code>{"public class Employee {"}</code>
@@ -194,9 +194,9 @@ Following are valid examples of variable declaration and initialization in Java 
                             <code>{"}"}</code>
                         </div>
                     </div>
-                    <div style={{marginTop:15, fontSize:20}}>This will produce the following result −</div>
+                    <div style={{marginTop:15, fontSize:16}}>This will produce the following result −</div>
                     <div className='output'>
-                        <div style={{fontWeight:'bold',fontSize:30}}><p>Ouput</p></div>
+                        <div style={{fontWeight:'bold',fontSize:20}}><p>Ouput</p></div>
                         <div style={{backgroundColor:'#F3F3F3',paddingLeft:300}}>
                             <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{"Development average salary:1000"}</code>
                         </div>
