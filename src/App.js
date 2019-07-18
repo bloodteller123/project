@@ -11,21 +11,22 @@ import VariableLesson from "./container/lessons/Variableslesson";
 import LoopLesson from "./container/lessons/Loopslesson";
 import Home from "./container/Home";
 import Register from "./container/Register";
-
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 export default class App extends Component {
   state = { loggedIn: true };
-  email = {};
+  username = {};
   password = {};
 
   onLogout = () => {
     this.setState({ loggedIn: false });
+    this.setState({ username: "" });
+    this.setState({ password: "" });
   };
 
-  onLogin = (email, pass) => {
+  onLogin = (username, pass) => {
     this.setState({ loggedIn: true });
-    this.setState({ email: email });
+    this.setState({ username: username });
     this.setState({ password: pass });
   };
 
@@ -49,7 +50,9 @@ export default class App extends Component {
                 <Link
                   style={{ color: "white" }}
                   to="/"
-                  onClick={() => this.onLogout()}
+                  onClick={
+                    (console.log(this.state.username), () => this.onLogout())
+                  }
                 >
                   Logout
                 </Link>
@@ -58,10 +61,7 @@ export default class App extends Component {
               /* CLEAR USERNAME/PASSWORD WHEN ITS IMPLEMETNED*/
 
               <li>
-                <Link
-                  style={{ color: "white" }}
-                  to="/login"
-                >
+                <Link style={{ color: "white" }} to="/login">
                   Login
                 </Link>
               </li>
