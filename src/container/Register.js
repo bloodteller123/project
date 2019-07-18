@@ -6,12 +6,7 @@ import Image from "./img/bground.png";
 
 import { LinkContainer } from "react-router-bootstrap";
 
-import {
-  
-  FormGroup,
-  FormControl,
-  FormLabel
-} from "react-bootstrap";
+import { FormGroup, FormControl, FormLabel } from "react-bootstrap";
 import LoaderButton from "react-bootstrap-button-loader";
 
 export default class Register extends Component {
@@ -46,7 +41,7 @@ export default class Register extends Component {
     this.setState({
       [event.target.id]: event.target.value
     });
-  }
+  };
 
   handleSubmit = async event => {
     event.preventDefault();
@@ -56,13 +51,13 @@ export default class Register extends Component {
     this.setState({ newUser: "test" });
 
     this.setState({ isLoading: false });
-  }
+  };
 
   handleConfirmationSubmit = async event => {
     event.preventDefault();
 
     this.setState({ isLoading: true });
-  }
+  };
 
   renderConfirmationForm() {
     return (
@@ -126,20 +121,18 @@ export default class Register extends Component {
             type="password"
           />
         </FormGroup>
-        <LinkContainer to="/login/">
-            <Button
-              block
-              bsSize="large"
-              disabled={!this.validateForm()}
-              isLoading={this.state.isLoading}
-              onClick={() =>
-                this.props.onLogin(this.state.username, this.state.password)
-              }
-              type="submit"
-            >
-              Sign Up
-            </Button>
-          </LinkContainer>
+        <LinkContainer to="/lessons/">
+          <Button
+            disabled={!this.validateForm()}
+            isLoading={this.state.isLoading}
+            onClick={() =>
+              this.props.onLogin(this.state.username, this.state.password)
+            }
+            type="submit"
+          >
+            Sign Up
+          </Button>
+        </LinkContainer>
       </form>
     );
   }
@@ -147,6 +140,7 @@ export default class Register extends Component {
   render() {
     return (
       <div className="Register">
+        <h1>Register Now!</h1>
         {this.state.newUser === null
           ? this.renderForm()
           : this.renderConfirmationForm()}
