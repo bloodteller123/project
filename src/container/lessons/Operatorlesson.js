@@ -18,7 +18,7 @@ export default class Operatorlesson extends Component {
             <div className="mainContainer" style={{paddingLeft:70, paddingRight:70, paddingBottom:100}}>
                 <h1 style={{fontSize:50, paddingTop:8}}>Lesson 2</h1>
 
-                <div style={{fontSize:30}}>
+                <div style={{fontSize:16}}>
                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Arithmetic operators are used in mathematical expressions in the same way that they are used in algebra. The following table lists the arithmetic operators −
 
 Assume integer variable A holds 10 and variable B holds 20, then −</p>
@@ -87,7 +87,7 @@ Assume integer variable A holds 10 and variable B holds 20, then −</p>
                     </Table>
                  </div>
                  <div style={{paddingTop:40}} className="example">
-                    <div style={{fontWeight:'bold',fontSize:30}}><p>Example</p></div>
+                    <div style={{fontWeight:'bold',fontSize:20}}><p>Example</p></div>
                     <div style={{backgroundColor:'#F3F3F3',paddingLeft:300}}>
                     <code>{"public class Test {"}</code>
                     <br />
@@ -119,7 +119,7 @@ Assume integer variable A holds 10 and variable B holds 20, then −</p>
                 </div>
                 </div>
                 <div className="output" style={{marginTop:30}}>
-                <div style={{fontWeight:'bold',fontSize:30}}><p>Output</p></div>
+                <div style={{fontWeight:'bold',fontSize:20}}><p>Output</p></div>
                     <div style={{backgroundColor:'#F3F3F3',paddingLeft:300}}>
                         <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{"a + b = 30"}</code>
                         <br />
