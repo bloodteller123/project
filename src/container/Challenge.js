@@ -34,7 +34,7 @@ export default class Challenge extends Component {
       page: testCode[this.props.match.params.number].page,
       comments: localStorage.getItem("comments")
         ? JSON.parse(localStorage.getItem("comments"))
-        : this.createArray(), 
+        : this.createArray(),
       text: "",
       userName: localStorage.getItem("userName")
         ? localStorage.getItem("userName")
@@ -50,22 +50,23 @@ export default class Challenge extends Component {
     }
     return temp;
   };
-/**
- * change the state of the code based on what user typed in the code editor 
- * @param  {String} newVal  code
- */
+  /**
+   * change the state of the code based on what user typed in the code editor
+   * @param  {String} newVal  code
+   */
   updateCode = newVal => {
     this.setState({
       tCode: newVal
     });
   };
 
-/**
- * send a post request via fetch api to the online compiler and proceed the returned JSON response accordingly
- */
+  /**
+   * send a post request via fetch api to the online compiler and proceed the returned JSON response accordingly
+   */
 
   submitCode = () => {
-    let program = { // create request body
+    let program = {
+      // create request body
       script: this.state.tCode,
       language: "java",
       versionIndex: "0",
@@ -73,7 +74,8 @@ export default class Challenge extends Component {
       clientSecret:
         "88d3924d889586db923d5635b0488848efd6ca3eac5d391fdda2d04977b447b3"
     };
-    fetch( // send request 
+    fetch(
+      // send request
       "https://cors-anywhere.herokuapp.com/https://api.jdoodle.com/execute",
       {
         method: "POST",
@@ -106,10 +108,10 @@ export default class Challenge extends Component {
       });
   };
 
-/**
- * function that will push a new comment object to the existing comment array that to be used to render comments
- * after setstate is done.
- */
+  /**
+   * function that will push a new comment object to the existing comment array that to be used to render comments
+   * after setstate is done.
+   */
 
   addReply = () => {
     console.log(this.state.text);
@@ -120,7 +122,8 @@ export default class Challenge extends Component {
     };
 
     this.setState(
-      prevS => { // push the new objecy into corresponding array
+      prevS => {
+        // push the new objecy into corresponding array
         let copyValues = [...prevS.comments];
         copyValues[this.props.match.params.number].push(newO);
         return {
@@ -147,9 +150,9 @@ export default class Challenge extends Component {
       displayHintToggle
     } = this.state;
 
-/**
- * create and return the button that canbe toggle the state
- */
+    /**
+     * create and return the button that canbe toggle the state
+     */
     const hintButton = (
       <Button
         content="Hint"
@@ -163,10 +166,10 @@ export default class Challenge extends Component {
       />
     );
 
-/**
- * create and return a comment block with the given comment object that has info on user/body/time
- * @param  {Object} commentObject commentObject
- */
+    /**
+     * create and return a comment block with the given comment object that has info on user/body/time
+     * @param  {Object} commentObject commentObject
+     */
     const CommentBlock = commentObject => {
       return (
         <Comment>
@@ -387,8 +390,7 @@ export default class Challenge extends Component {
                     (commentObject, index) => (
                       <CommentBlock {...commentObject} />
                     )
-                  )
-                  }
+                  )}
                 </Comment.Group>
               </div>
               <div>

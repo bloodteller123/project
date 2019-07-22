@@ -18,6 +18,9 @@ export default class App extends Component {
   username = {};
   password = {};
 
+  /**
+   * Set states on logout
+   */
   onLogout = () => {
     this.setState({ loggedIn: false });
     this.setState({ username: "" });
@@ -25,6 +28,9 @@ export default class App extends Component {
     localStorage.setItem("userName", "");
   };
 
+  /**
+   * Method for child components to change this components states
+   */
   onLogin = (username, pass) => {
     this.setState({ loggedIn: true });
     this.setState({ username: username });
@@ -38,6 +44,7 @@ export default class App extends Component {
     return (
       <Router>
         <nav>
+          {/* Link to homepage if logged out */}
           {loggedIn ? (
             <Link to="/lessons/" style={{ color: "white" }}>
               <h3>FunKids</h3>
@@ -53,6 +60,7 @@ export default class App extends Component {
                 Lessons
               </Link>
             </li>
+            {/* Logout + Name if logged in, Login if not */}
             {loggedIn ? (
               <li>
                 <Link
@@ -74,6 +82,7 @@ export default class App extends Component {
             )}
           </ul>
         </nav>
+        {/* Routes */}
         <Route path="/" exact component={Home} />
         <Route
           path="/register"
